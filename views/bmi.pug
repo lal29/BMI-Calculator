@@ -1,0 +1,14 @@
+extends layout.pug
+block content 
+    form(action='/' method='POST')
+      h1 BMI calculator
+      p Insert Your Age
+      input(type='text' name='age', value=age)
+      p Insert Weight in Kg
+      input(type='text' name='weight', value=weight)
+      br
+      p Insert Height in cm
+      input(type='text' name='height', value=height)
+      br
+      button(type='submit' name='calc') check
+      p#output #{result}
